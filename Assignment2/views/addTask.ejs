@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-size: large;
+            text-align: center;
+        }
+        
+        nav a{
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px;
+        }
+        section{
+            text-align: left;
+            margin: 20px;
+            padding: 50px;
+        }
+        section input{
+            width: 50%;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        section button{
+            padding: 5px;
+            margin: 20px;
+            font-size: larger;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        
+            <a href="/">Home</a>
+            <a href="/specifictask">Specific Task</a>
+            <a href="/alltasks">All Tasks</a>
+        
+    </nav>
+
+    <section>
+        <form action="/success" method="POST">
+            <input type="text" name="title" id="title" placeholder="Enter the ID..."><br>
+            <input type="text" name="content" id="content" placeholder="Enter the task..."><br>
+            <button type="submit">submit</button>
+        </form>
+
+    </section>
+    
+</body>
+</html>

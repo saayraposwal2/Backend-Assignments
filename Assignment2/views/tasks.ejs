@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Tasks</title>
+    <style>
+        body{
+            color: white;
+            background-color: black;
+            font-size: large;
+        }
+
+        div{
+            border: white solid 2px;
+            border-radius: 10px;
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            text-align: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/specifictask">Specific Task</a>
+        <a href="/alltasks">All Tasks</a>
+    </nav>
+
+    <h1>Tasks to Complete</h1>
+
+    <% records.forEach(record => { %>
+        <div>
+            <h3><%= record.title %></h3>
+            <p><%= record.content %></p>
+        </div>
+    <% }); %>
+    
+</body>
+</html>
